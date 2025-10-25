@@ -1,0 +1,813 @@
+<!DOCTYPE html><html data-pathToRoot="" data-rawLocation="bearlyb" data-dynamicSideMenu="false"><head><meta charset="utf-8"></meta><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta><title>bearlyb</title><link rel="shortcut icon" type="image/x-icon" href="favicon.ico"></link><script type="text/javascript" src="scripts/theme.js"></script><script type="text/javascript" src="scripts/searchData.js" defer="true"></script><script type="text/javascript" src="scripts/scastieConfiguration.js" defer="true"></script><link rel="stylesheet" href="styles/theme/bundle.css"></link><link rel="stylesheet" href="styles/theme/components/bundle.css"></link><link rel="stylesheet" href="styles/theme/components/button/bundle.css"></link><link rel="stylesheet" href="styles/theme/layout/bundle.css"></link><link rel="stylesheet" href="styles/nord-light.css"></link><link rel="stylesheet" href="styles/dotty-icons.css"></link><link rel="stylesheet" href="styles/filter-bar.css"></link><link rel="stylesheet" href="styles/code-snippets.css"></link><link rel="stylesheet" href="styles/searchbar.css"></link><link rel="stylesheet" href="styles/social-links.css"></link><link rel="stylesheet" href="styles/versions-dropdown.css"></link><link rel="stylesheet" href="styles/content-contributors.css"></link><link rel="stylesheet" href="styles/fontawesome.css"></link><script type="text/javascript" src="hljs/highlight.pack.js" defer="true"></script><script type="text/javascript" src="scripts/hljs-scala3.js" defer="true"></script><script type="text/javascript" src="scripts/ux.js" defer="true"></script><script type="text/javascript" src="scripts/common/component.js" defer="true"></script><script type="text/javascript" src="scripts/common/utils.js" defer="true"></script><script type="text/javascript" src="scripts/components/FilterBar.js" defer="true"></script><script type="text/javascript" src="scripts/components/DocumentableList.js" defer="true"></script><script type="text/javascript" src="scripts/components/Input.js" defer="true"></script><script type="text/javascript" src="scripts/components/FilterGroup.js" defer="true"></script><script type="text/javascript" src="scripts/components/Filter.js" defer="true"></script><script type="text/javascript" src="scripts/scaladoc-scalajs.js" defer="true"></script><script type="text/javascript" src="scripts/contributors.js" defer="true"></script><script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js" defer="true"></script><script type="text/javascript" src="https://d3js.org/d3.v6.min.js" defer="true"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/graphlib-dot@0.6.2/dist/graphlib-dot.min.js" defer="true"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dagre-d3/0.6.1/dagre-d3.min.js" defer="true"></script><script type="text/javascript" src="https://scastie.scala-lang.org/embedded.js" defer="true"></script><script type="text/javascript" src="scripts/data.js" defer="true"></script><link rel="stylesheet" href="styles/apistyles.css"></link><script>var pathToRoot = "";</script></head><body><div id=""><div id="header" class="body-small"><div class="header-container-left"><a href="" class="logo-container"><span class="project-name h300">bearlyb</span></a><span onclick="dropdownHandler(event)" class="text-button with-arrow" id="dropdown-trigger"><a></a></span><div id="version-dropdown" class="dropdown-menu"></div></div><div class="header-container-right"><button id="search-toggle" class="icon-button"></button><span id="theme-toggle" class="icon-button"></span><span id="mobile-menu-toggle" class="icon-button hamburger"></span></div></div><div id="mobile-menu"><div class="mobile-menu-header body-small"><span class="mobile-menu-logo"><span class="project-name h300">bearlyb</span></span><button id="mobile-menu-close" class="icon-button close"></button></div><div class="mobile-menu-container body-medium"><input id="mobile-scaladoc-searchbar-input" class="scaladoc-searchbar-input" type="search" placeholder="Find anything"></input><span id="mobile-theme-toggle" class="mobile-menu-item mode"></span></div></div><span id="mobile-sidebar-toggle" class="floating-button"></span><div id="leftColumn" class="body-small"><div class="switcher-container"><a id="api-nav-button" class="switcher h100 selected" href="index.html">API</a></div><nav id="api-nav" class="side-menu"><div class="ni n0 expanded"><span class="nh h100 selected"><button class="ar icon-button expanded"></button><a href="#"><span class="micon pa"></span><span>bearlyb</span></a></span><div class="ni n1 "><span class="nh "><a href="bearlyb/camera.html"><span class="micon pa"></span><span>camera</span></a></span></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/events.html"><span class="micon pa"></span><span>events</span></a></span><div class="ni n2 "><span class="nh "><a href="bearlyb/events/Event.html"><span class="micon tr"></span><span>Event</span></a></span></div><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/events/Event$.html"><span class="micon ob"></span><span>Event</span></a></span><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/events/Event$$CameraDevice.html"><span class="micon en"></span><span>CameraDevice</span></a></span><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$CameraDevice$$Added.html"><span class="micon cl"></span><span>Added</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$CameraDevice$$Removed.html"><span class="micon cl"></span><span>Removed</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$CameraDevice$$Approved.html"><span class="micon cl"></span><span>Approved</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$CameraDevice$$Denied.html"><span class="micon cl"></span><span>Denied</span></a></span></div></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$ClipboardUpdate.html"><span class="micon cl"></span><span>ClipboardUpdate</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$DidEnterBackground.html"><span class="micon cl"></span><span>DidEnterBackground</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$DidEnterForeground.html"><span class="micon cl"></span><span>DidEnterForeground</span></a></span></div><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/events/Event$$Display.html"><span class="micon en"></span><span>Display</span></a></span><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Display$$Orientation.html"><span class="micon cl"></span><span>Orientation</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Display$$Added.html"><span class="micon cl"></span><span>Added</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Display$$Removed.html"><span class="micon cl"></span><span>Removed</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Display$$Moved.html"><span class="micon cl"></span><span>Moved</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Display$$DesktopModeChanged.html"><span class="micon cl"></span><span>DesktopModeChanged</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Display$$CurrentModeChanged.html"><span class="micon cl"></span><span>CurrentModeChanged</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Display$$ContentScaleChanged.html"><span class="micon cl"></span><span>ContentScaleChanged</span></a></span></div></div><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/events/Event$$Drop.html"><span class="micon en"></span><span>Drop</span></a></span><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Drop$$File.html"><span class="micon cl"></span><span>File</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Drop$$Text.html"><span class="micon cl"></span><span>Text</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Drop$$Begin.html"><span class="micon cl"></span><span>Begin</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Drop$$Complete.html"><span class="micon cl"></span><span>Complete</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Drop$$Position.html"><span class="micon cl"></span><span>Position</span></a></span></div></div><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/events/Event$$Finger.html"><span class="micon en"></span><span>Finger</span></a></span><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Finger$$Down.html"><span class="micon cl"></span><span>Down</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Finger$$Up.html"><span class="micon cl"></span><span>Up</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Finger$$Motion.html"><span class="micon cl"></span><span>Motion</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Finger$$Canceled.html"><span class="micon cl"></span><span>Canceled</span></a></span></div></div><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/events/Event$$Gamepad.html"><span class="micon en"></span><span>Gamepad</span></a></span><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Gamepad$$ButtonDown.html"><span class="micon cl"></span><span>ButtonDown</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Gamepad$$ButtonUp.html"><span class="micon cl"></span><span>ButtonUp</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Gamepad$$AxisMotion.html"><span class="micon cl"></span><span>AxisMotion</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Gamepad$$Added.html"><span class="micon cl"></span><span>Added</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Gamepad$$Removed.html"><span class="micon cl"></span><span>Removed</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Gamepad$$Remapped.html"><span class="micon cl"></span><span>Remapped</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Gamepad$$TouchpadDown.html"><span class="micon cl"></span><span>TouchpadDown</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Gamepad$$TouchpadMotion.html"><span class="micon cl"></span><span>TouchpadMotion</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Gamepad$$TouchpadUp.html"><span class="micon cl"></span><span>TouchpadUp</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Gamepad$$SensorUpdate.html"><span class="micon cl"></span><span>SensorUpdate</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Gamepad$$UpdateComplete.html"><span class="micon cl"></span><span>UpdateComplete</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Gamepad$$SteamHandleUpdated.html"><span class="micon cl"></span><span>SteamHandleUpdated</span></a></span></div></div><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/events/Event$$Joystick.html"><span class="micon en"></span><span>Joystick</span></a></span><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Joystick$$ButtonDown.html"><span class="micon cl"></span><span>ButtonDown</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Joystick$$ButtonUp.html"><span class="micon cl"></span><span>ButtonUp</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Joystick$$AxisMotion.html"><span class="micon cl"></span><span>AxisMotion</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Joystick$$BallMotion.html"><span class="micon cl"></span><span>BallMotion</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Joystick$$HatMotion.html"><span class="micon cl"></span><span>HatMotion</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Joystick$$Added.html"><span class="micon cl"></span><span>Added</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Joystick$$Removed.html"><span class="micon cl"></span><span>Removed</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Joystick$$BatteryUpdated.html"><span class="micon cl"></span><span>BatteryUpdated</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Joystick$$UpdateComplete.html"><span class="micon cl"></span><span>UpdateComplete</span></a></span></div></div><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/events/Event$$Key.html"><span class="micon en"></span><span>Key</span></a></span><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Key$$Down.html"><span class="micon cl"></span><span>Down</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Key$$Up.html"><span class="micon cl"></span><span>Up</span></a></span></div></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$KeyboardAdded.html"><span class="micon cl"></span><span>KeyboardAdded</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$KeyboardRemoved.html"><span class="micon cl"></span><span>KeyboardRemoved</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$KeymapChanged.html"><span class="micon cl"></span><span>KeymapChanged</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$LocaleChanged.html"><span class="micon cl"></span><span>LocaleChanged</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$LowMemory.html"><span class="micon cl"></span><span>LowMemory</span></a></span></div><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/events/Event$$Mouse.html"><span class="micon en"></span><span>Mouse</span></a></span><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Mouse$$ButtonDown.html"><span class="micon cl"></span><span>ButtonDown</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Mouse$$ButtonUp.html"><span class="micon cl"></span><span>ButtonUp</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Mouse$$Motion.html"><span class="micon cl"></span><span>Motion</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Mouse$$Wheel.html"><span class="micon cl"></span><span>Wheel</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Mouse$$Added.html"><span class="micon cl"></span><span>Added</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Mouse$$Removed.html"><span class="micon cl"></span><span>Removed</span></a></span></div></div><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/events/Event$$Pen.html"><span class="micon en"></span><span>Pen</span></a></span><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Pen$$ProximityIn.html"><span class="micon cl"></span><span>ProximityIn</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Pen$$ProximityOut.html"><span class="micon cl"></span><span>ProximityOut</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Pen$$Down.html"><span class="micon cl"></span><span>Down</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Pen$$Up.html"><span class="micon cl"></span><span>Up</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Pen$$ButtonDown.html"><span class="micon cl"></span><span>ButtonDown</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Pen$$ButtonUp.html"><span class="micon cl"></span><span>ButtonUp</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Pen$$Motion.html"><span class="micon cl"></span><span>Motion</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Pen$$Axis.html"><span class="micon cl"></span><span>Axis</span></a></span></div></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$Quit.html"><span class="micon cl"></span><span>Quit</span></a></span></div><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/events/Event$$Render.html"><span class="micon en"></span><span>Render</span></a></span><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Render$$TargetsReset.html"><span class="micon cl"></span><span>TargetsReset</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Render$$DeviceReset.html"><span class="micon cl"></span><span>DeviceReset</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Render$$DeviceLost.html"><span class="micon cl"></span><span>DeviceLost</span></a></span></div></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$SystemThemeChanged.html"><span class="micon cl"></span><span>SystemThemeChanged</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$Terminating.html"><span class="micon cl"></span><span>Terminating</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$TextEditing.html"><span class="micon cl"></span><span>TextEditing</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$TextEditingCandidates.html"><span class="micon cl"></span><span>TextEditingCandidates</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$TextInput.html"><span class="micon cl"></span><span>TextInput</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$WillEnterBackground.html"><span class="micon cl"></span><span>WillEnterBackground</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/events/Event$$WillEnterForeground.html"><span class="micon cl"></span><span>WillEnterForeground</span></a></span></div><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/events/Event$$Window.html"><span class="micon en"></span><span>Window</span></a></span><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$Shown.html"><span class="micon cl"></span><span>Shown</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$Hidden.html"><span class="micon cl"></span><span>Hidden</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$Exposed.html"><span class="micon cl"></span><span>Exposed</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$Moved.html"><span class="micon cl"></span><span>Moved</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$Resized.html"><span class="micon cl"></span><span>Resized</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$PixelSizeChanged.html"><span class="micon cl"></span><span>PixelSizeChanged</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$MetalViewResized.html"><span class="micon cl"></span><span>MetalViewResized</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$Minimized.html"><span class="micon cl"></span><span>Minimized</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$Maximized.html"><span class="micon cl"></span><span>Maximized</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$Restored.html"><span class="micon cl"></span><span>Restored</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$MouseEnter.html"><span class="micon cl"></span><span>MouseEnter</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$MouseLeave.html"><span class="micon cl"></span><span>MouseLeave</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$FocusGained.html"><span class="micon cl"></span><span>FocusGained</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$FocusLost.html"><span class="micon cl"></span><span>FocusLost</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$CloseRequested.html"><span class="micon cl"></span><span>CloseRequested</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$HitTest.html"><span class="micon cl"></span><span>HitTest</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$ICCProfChanged.html"><span class="micon cl"></span><span>ICCProfChanged</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$DisplayChanged.html"><span class="micon cl"></span><span>DisplayChanged</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$DisplayScaleChanged.html"><span class="micon cl"></span><span>DisplayScaleChanged</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$SafeAreaChanged.html"><span class="micon cl"></span><span>SafeAreaChanged</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$Occluded.html"><span class="micon cl"></span><span>Occluded</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$EnterFullscreen.html"><span class="micon cl"></span><span>EnterFullscreen</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$LeaveFullscreen.html"><span class="micon cl"></span><span>LeaveFullscreen</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$Destroyed.html"><span class="micon cl"></span><span>Destroyed</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/events/Event$$Window$$HDRStateChanged.html"><span class="micon cl"></span><span>HDRStateChanged</span></a></span></div></div></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/gamepad.html"><span class="micon pa"></span><span>gamepad</span></a></span><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/gamepad/Gamepad$.html"><span class="micon ob"></span><span>Gamepad</span></a></span><div class="ni n3 "><span class="nh "><a href="bearlyb/gamepad/Gamepad$$Axis.html"><span class="micon en"></span><span>Axis</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/gamepad/Gamepad$$Axis$.html"><span class="micon ob"></span><span>Axis</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/gamepad/Gamepad$$Button.html"><span class="micon en"></span><span>Button</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/gamepad/Gamepad$$Button$.html"><span class="micon ob"></span><span>Button</span></a></span></div></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/initialize.html"><span class="micon pa"></span><span>initialize</span></a></span><div class="ni n2 "><span class="nh "><a href="bearlyb/initialize/Flags.html"><span class="micon en"></span><span>Flags</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/initialize/Flags$.html"><span class="micon ob"></span><span>Flags</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/joystick.html"><span class="micon pa"></span><span>joystick</span></a></span><div class="ni n2 "><span class="nh "><a href="bearlyb/joystick/HatPosition.html"><span class="micon en"></span><span>HatPosition</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/joystick/HatPosition$.html"><span class="micon ob"></span><span>HatPosition</span></a></span></div></div><div class="ni n1 "><span class="nh "><a href="bearlyb/keyboard.html"><span class="micon pa"></span><span>keyboard</span></a></span></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/keycode.html"><span class="micon pa"></span><span>keycode</span></a></span><div class="ni n2 "><span class="nh "><a href="bearlyb/keycode/Keycode$.html"><span class="micon ob"></span><span>Keycode</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/keycode/Keymod$.html"><span class="micon ob"></span><span>Keymod</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/mouse.html"><span class="micon pa"></span><span>mouse</span></a></span><div class="ni n2 "><span class="nh "><a href="bearlyb/mouse/Button$.html"><span class="micon ob"></span><span>Button</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/mouse/WheelDirection.html"><span class="micon en"></span><span>WheelDirection</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/pen.html"><span class="micon pa"></span><span>pen</span></a></span><div class="ni n2 "><span class="nh "><a href="bearlyb/pen/PenAxis.html"><span class="micon en"></span><span>PenAxis</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/pen/PenAxis$.html"><span class="micon ob"></span><span>PenAxis</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/pen/PenInput$.html"><span class="micon ob"></span><span>PenInput</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/pixels.html"><span class="micon pa"></span><span>pixels</span></a></span><div class="ni n2 "><span class="nh "><a href="bearlyb/pixels/Color$.html"><span class="micon ob"></span><span>Color</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/pixels/Palette.html"><span class="micon cl"></span><span>Palette</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/pixels/PixelFormat$.html"><span class="micon ob"></span><span>PixelFormat</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/pixels/RawColor$.html"><span class="micon ob"></span><span>RawColor</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/power.html"><span class="micon pa"></span><span>power</span></a></span><div class="ni n2 "><span class="nh "><a href="bearlyb/power/PowerState.html"><span class="micon en"></span><span>PowerState</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/power/PowerState$.html"><span class="micon ob"></span><span>PowerState</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/rect.html"><span class="micon pa"></span><span>rect</span></a></span><div class="ni n2 "><span class="nh "><a href="bearlyb/rect/Point$.html"><span class="micon ob"></span><span>Point</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/rect/Rect.html"><span class="micon cl"></span><span>Rect</span></a></span></div><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/rect/Rect$.html"><span class="micon ob"></span><span>Rect</span></a></span><div class="ni n3 "><span class="nh "><a href="bearlyb/rect/Rect$$CompareEpsilon$.html"><span class="micon ob"></span><span>CompareEpsilon</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/rect/Rect$$EnclosepointsEpsilon$.html"><span class="micon ob"></span><span>EnclosepointsEpsilon</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/rect/Rect$$given_InternalOps_Float$.html"><span class="micon ob"></span><span>given_InternalOps_Float</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/rect/Rect$$given_InternalOps_Int$.html"><span class="micon ob"></span><span>given_InternalOps_Int</span></a></span></div></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/render.html"><span class="micon pa"></span><span>render</span></a></span><div class="ni n2 "><span class="nh "><a href="bearlyb/render/Renderer.html"><span class="micon cl"></span><span>Renderer</span></a></span></div><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/render/Renderer$.html"><span class="micon ob"></span><span>Renderer</span></a></span><div class="ni n3 "><span class="nh "><a href="bearlyb/render/Renderer$$LogicalPresentation.html"><span class="micon en"></span><span>LogicalPresentation</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/render/Renderer$$LogicalPresentation$.html"><span class="micon ob"></span><span>LogicalPresentation</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/render/Renderer$$given_Releasable_Renderer$.html"><span class="micon ob"></span><span>given_Releasable_Renderer</span></a></span></div></div><div class="ni n2 "><span class="nh "><a href="bearlyb/render/Texture.html"><span class="micon cl"></span><span>Texture</span></a></span></div><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/render/Texture$.html"><span class="micon ob"></span><span>Texture</span></a></span><div class="ni n3 "><span class="nh "><a href="bearlyb/render/Texture$$Writer.html"><span class="micon cl"></span><span>Writer</span></a></span></div><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/render/Texture$$Writer$.html"><span class="micon ob"></span><span>Writer</span></a></span><div class="ni n4 "><span class="nh "><a href="bearlyb/render/Texture$$Writer$$given_Releasable_Writer$.html"><span class="micon ob"></span><span>given_Releasable_Writer</span></a></span></div></div></div><div class="ni n2 "><span class="nh "><a href="bearlyb/render/TextureAccess.html"><span class="micon en"></span><span>TextureAccess</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/render/TextureAccess$.html"><span class="micon ob"></span><span>TextureAccess</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/scancode.html"><span class="micon pa"></span><span>scancode</span></a></span><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/scancode/Scancode$.html"><span class="micon ob"></span><span>Scancode</span></a></span><div class="ni n3 "><span class="nh "><a href="bearlyb/scancode/Scancode$$Dyn$.html"><span class="micon ob"></span><span>Dyn</span></a></span></div></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/sensor.html"><span class="micon pa"></span><span>sensor</span></a></span><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/sensor/SensorData.html"><span class="micon en"></span><span>SensorData</span></a></span><div class="ni n3 "><span class="nh "><a href="bearlyb/sensor/SensorData$$Accel.html"><span class="micon cl"></span><span>Accel</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/sensor/SensorData$$Gyro.html"><span class="micon cl"></span><span>Gyro</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/sensor/SensorData$$AccelL.html"><span class="micon cl"></span><span>AccelL</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/sensor/SensorData$$GyroL.html"><span class="micon cl"></span><span>GyroL</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/sensor/SensorData$$AccelR.html"><span class="micon cl"></span><span>AccelR</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/sensor/SensorData$$GyroR.html"><span class="micon cl"></span><span>GyroR</span></a></span></div></div><div class="ni n2 "><span class="nh "><a href="bearlyb/sensor/SensorData$.html"><span class="micon ob"></span><span>SensorData</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/surface.html"><span class="micon pa"></span><span>surface</span></a></span><div class="ni n2 "><span class="nh "><a href="bearlyb/surface/FlipMode.html"><span class="micon en"></span><span>FlipMode</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/surface/ScaleMode.html"><span class="micon en"></span><span>ScaleMode</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/surface/ScaleMode$.html"><span class="micon ob"></span><span>ScaleMode</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/surface/Surface.html"><span class="micon cl"></span><span>Surface</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/surface/Surface$.html"><span class="micon ob"></span><span>Surface</span></a></span></div></div><div class="ni n1 "><span class="nh "><a href="bearlyb/touch.html"><span class="micon pa"></span><span>touch</span></a></span></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/video.html"><span class="micon pa"></span><span>video</span></a></span><div class="ni n2 "><span class="nh "><a href="bearlyb/video/BlendMode$.html"><span class="micon ob"></span><span>BlendMode</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/video/DisplayMode.html"><span class="micon cl"></span><span>DisplayMode</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/video/DisplayMode$.html"><span class="micon ob"></span><span>DisplayMode</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/video/FlashOperation.html"><span class="micon en"></span><span>FlashOperation</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/video/SystemTheme.html"><span class="micon en"></span><span>SystemTheme</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/video/SystemTheme$.html"><span class="micon ob"></span><span>SystemTheme</span></a></span></div><div class="ni n2 "><span class="nh "><a href="bearlyb/video/Window.html"><span class="micon cl"></span><span>Window</span></a></span></div><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/video/Window$.html"><span class="micon ob"></span><span>Window</span></a></span><div class="ni n3 "><span class="nh "><a href="bearlyb/video/Window$$Flag.html"><span class="micon en"></span><span>Flag</span></a></span></div><div class="ni n3 "><span class="nh "><a href="bearlyb/video/Window$$Flag$.html"><span class="micon ob"></span><span>Flag</span></a></span></div><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/video/Window$$Property.html"><span class="micon en"></span><span>Property</span></a></span><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$AlwaysOnTop.html"><span class="micon cl"></span><span>AlwaysOnTop</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$BorderlessBoolean.html"><span class="micon cl"></span><span>BorderlessBoolean</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$ExternalGraphicsContext.html"><span class="micon cl"></span><span>ExternalGraphicsContext</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Focusable.html"><span class="micon cl"></span><span>Focusable</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Fullscreen.html"><span class="micon cl"></span><span>Fullscreen</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Height.html"><span class="micon cl"></span><span>Height</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Hidden.html"><span class="micon cl"></span><span>Hidden</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$HighPixelDensity.html"><span class="micon cl"></span><span>HighPixelDensity</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Maximized.html"><span class="micon cl"></span><span>Maximized</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$PopupMenu.html"><span class="micon cl"></span><span>PopupMenu</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Metal.html"><span class="micon cl"></span><span>Metal</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Minimized.html"><span class="micon cl"></span><span>Minimized</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Modal.html"><span class="micon cl"></span><span>Modal</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$MouseGrabbed.html"><span class="micon cl"></span><span>MouseGrabbed</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$OpenGL.html"><span class="micon cl"></span><span>OpenGL</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Parent.html"><span class="micon cl"></span><span>Parent</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Resizable.html"><span class="micon cl"></span><span>Resizable</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Title.html"><span class="micon cl"></span><span>Title</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Transparent.html"><span class="micon cl"></span><span>Transparent</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Tooltip.html"><span class="micon cl"></span><span>Tooltip</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Utility.html"><span class="micon cl"></span><span>Utility</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Vulkan.html"><span class="micon cl"></span><span>Vulkan</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Width.html"><span class="micon cl"></span><span>Width</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$X.html"><span class="micon cl"></span><span>X</span></a></span></div><div class="ni n4 "><span class="nh "><a href="bearlyb/video/Window$$Property$$Y.html"><span class="micon cl"></span><span>Y</span></a></span></div></div></div></div><div class="ni n1 "><span class="nh "><a href="bearlyb/BearlybException.html"><span class="micon cl"></span><span>BearlybException</span></a></span></div><div class="ni n1 "><span class="nh "><a href="bearlyb/MallocMany.html"><span class="micon tr"></span><span>MallocMany</span></a></span></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="bearlyb/MallocMany$.html"><span class="micon ob"></span><span>MallocMany</span></a></span><div class="ni n2 "><span class="nh "><a href="bearlyb/MallocMany$$given_MallocMany_$.html"><span class="micon ob"></span><span>given_MallocMany_</span></a></span></div></div></div></nav></div><div id="footer" class="body-small"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div><div id="scaladoc-searchBar"></div><div id="main"><div class="breadcrumbs container"><a href="index.html">bearlyb</a>/<a href="bearlyb.html">bearlyb</a></div><div id="content" class="body-medium"><div><div class="cover-header">
+ <span class="icon"><span class="micon pa"></span></span>
+ <h1 class="h600 single">bearlyb</h1>
+</div>
+<div class="fqname body-large">
+ <span></span>
+</div>
+<div class="main-signature mono-small-block">
+ <div class="signature">
+  <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb.html" t="n" class="documentableName ">bearlyb</a>
+ </div>
+</div>
+<section id="members-list">
+ <h2 class="h500">Members list</h2>
+ <div class="documentableFilter">
+  <div class="filtersContainer"></div><input class="filterableInput" placeholder="Filter by any phrase" data-test-id="filterBarInput" type="search"><button class="clearButton label-only-button" data-test-id="filterBarClearButton">Clear all</button>
+ </div>
+ <div class="membersList expand">
+  <div class="tabs">
+   <div class="contents">
+    <section id="Packages">
+     <div data-togglable="packages" class="tab expand">
+      <div class="documentableList expand">
+       <div class="documentableList-expander">
+        <button class="icon-button show-content expand"></button>
+        <h3 class="groupHeader h400">Packages</h3>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/camera.html" t="n" class="documentableName ">bearlyb.camera</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/events.html" t="n" class="documentableName ">bearlyb.events</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/gamepad.html" t="n" class="documentableName ">bearlyb.gamepad</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/initialize.html" t="n" class="documentableName ">bearlyb.initialize</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/joystick.html" t="n" class="documentableName ">bearlyb.joystick</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/keyboard.html" t="n" class="documentableName ">bearlyb.keyboard</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/keycode.html" t="n" class="documentableName ">bearlyb.keycode</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/mouse.html" t="n" class="documentableName ">bearlyb.mouse</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/pen.html" t="n" class="documentableName ">bearlyb.pen</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/pixels.html" t="n" class="documentableName ">bearlyb.pixels</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/power.html" t="n" class="documentableName ">bearlyb.power</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/rect.html" t="n" class="documentableName ">bearlyb.rect</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/render.html" t="n" class="documentableName ">bearlyb.render</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/scancode.html" t="n" class="documentableName ">bearlyb.scancode</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/sensor.html" t="n" class="documentableName ">bearlyb.sensor</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/surface.html" t="n" class="documentableName ">bearlyb.surface</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/touch.html" t="n" class="documentableName ">bearlyb.touch</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="documentableElement">
+        <div class="documentableElement-expander">
+         <div class="header monospace mono-medium">
+          <div class="signature">
+           <span class="modifiers"></span><span class="kind"><span t="k">package </span></span><a href="bearlyb/video.html" t="n" class="documentableName ">bearlyb.video</a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="Type-members">
+     <div data-togglable="Type members" class="tab expand">
+      <div class="member-group-header">
+       <h3 data-togglable="Type members" class="h400">Type members</h3>
+      </div>
+      <section id="Classlikes">
+       <div class="documentableList expand">
+        <div class="documentableList-expander">
+         <button class="icon-button show-content expand"></button>
+         <h4 class="groupHeader h200">Classlikes</h4>
+        </div>
+        <div class="documentableElement" data-f-keywords="case">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="signature-short"><span class="modifiers"><span t="k">case </span></span><span class="kind"><span t="k">class </span></span><a href="bearlyb/BearlybException.html" t="n" class="documentableName ">BearlybException</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">msg</span>: <span data-unresolved-link="" t="t">String</span>)<span t="k"> extends </span><span data-unresolved-link="" t="t">RuntimeException</span></span><span class="signature-long"></span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Supertypes
+              </dt>
+              <dd class="body-medium">
+               <div class="mono-small-block supertypes">
+                <div>
+                 trait <span data-unresolved-link="" t="n">Product</span>
+                </div>
+                <div>
+                 trait <span data-unresolved-link="" t="n">Equals</span>
+                </div>
+                <div>
+                 class <span data-unresolved-link="" t="n">RuntimeException</span>
+                </div>
+                <div>
+                 class <span data-unresolved-link="" t="n">Exception</span>
+                </div>
+                <div>
+                 class <span data-unresolved-link="" t="n">Throwable</span>
+                </div>
+                <div>
+                 trait <span data-unresolved-link="" t="n">Serializable</span>
+                </div>
+                <div>
+                 class <span data-unresolved-link="" t="n">Object</span>
+                </div>
+                <div>
+                 trait <span data-unresolved-link="" t="n">Matchable</span>
+                </div>
+                <div>
+                 class <span data-unresolved-link="" t="n">Any</span>
+                </div><span class="show-all-code show-content text-button h100">Show all</span>
+               </div>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" data-f-keywords="sealed">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">sealed </span></span><span class="kind"><span t="k">trait </span></span><a href="bearlyb/MallocMany.html" t="n" class="documentableName ">MallocMany</a>[<span t="k"></span><span data-unresolved-link="" t="t">N</span><span t="k"> &lt;: </span><span data-unresolved-link="" t="t">Int</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Companion
+              </dt>
+              <dd class="body-medium">
+               <a href="bearlyb/MallocMany$.html">object</a>
+              </dd>
+              <dt class="body-small">
+               Supertypes
+              </dt>
+              <dd class="body-medium">
+               <div class="mono-small-block supertypes">
+                <div>
+                 class <span data-unresolved-link="" t="n">Object</span>
+                </div>
+                <div>
+                 trait <span data-unresolved-link="" t="n">Matchable</span>
+                </div>
+                <div>
+                 class <span data-unresolved-link="" t="n">Any</span>
+                </div><span></span>
+               </div>
+              </dd>
+              <dt class="body-small">
+               Known subtypes
+              </dt>
+              <dd class="body-medium">
+               <div class="mono-small-block subtypes">
+                <div>
+                 object <a href="bearlyb/MallocMany$$given_MallocMany_$.html" t="n">given_MallocMany_</a>
+                </div><span></span>
+               </div>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">object </span></span><a href="bearlyb/MallocMany$.html" t="n" class="documentableName ">MallocMany</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Companion
+              </dt>
+              <dd class="body-medium">
+               <a href="bearlyb/MallocMany.html">trait</a>
+              </dd>
+              <dt class="body-small">
+               Supertypes
+              </dt>
+              <dd class="body-medium">
+               <div class="mono-small-block supertypes">
+                <div>
+                 class <span data-unresolved-link="" t="n">Object</span>
+                </div>
+                <div>
+                 trait <span data-unresolved-link="" t="n">Matchable</span>
+                </div>
+                <div>
+                 class <span data-unresolved-link="" t="n">Any</span>
+                </div><span></span>
+               </div>
+              </dd>
+              <dt class="body-small">
+               Self type
+              </dt>
+              <dd class="body-medium">
+               <div class="mono-small-block supertypes">
+                <span></span>
+                <div>
+                 <a href="bearlyb/MallocMany$.html" t="n">MallocMany</a>.<span t="k">type</span>
+                </div>
+               </div>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+      <section id="Types">
+       <div class="documentableList expand">
+        <div class="documentableList-expander">
+         <button class="icon-button show-content expand"></button>
+         <h4 class="groupHeader h200">Types</h4>
+        </div>
+        <div class="documentableElement" id="Vec-0">
+         <div class="documentableElement-expander">
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">type </span></span><a href="bearlyb.html#Vec-0" t="n" class="documentableName ">Vec</a>[<span t="k">+</span><span data-unresolved-link="" t="t">T</span>, <span t="k"></span><span data-unresolved-link="" t="t">Len</span><span t="k"> &lt;: </span><span data-unresolved-link="" t="t">Int</span>] = <span data-unresolved-link="" t="t">Len</span><span t="k"> match </span>{ <span t="k"> case </span>0<span t="k"> =&gt; </span><span data-unresolved-link="" t="t">EmptyTuple</span> <span t="k"> case </span><span data-unresolved-link="" t="t">S</span>[<span t="t">n</span>]<span t="k"> =&gt; </span><span data-unresolved-link="" t="t">T</span> <span data-unresolved-link="" t="t">*:</span> <a href="bearlyb.html#Vec-0" t="t">Vec</a>[<span data-unresolved-link="" t="t">T</span>, <span t="t">n</span>] }
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+    </section>
+    <section id="Exports">
+     <div data-togglable="Exports" class="tab expand">
+      <div class="member-group-header">
+       <h3 data-togglable="Exports" class="h400">Exports</h3>
+      </div>
+      <section id="Defined-exports">
+       <div class="documentableList expand">
+        <div class="documentableList-expander">
+         <button class="icon-button show-content expand"></button>
+         <h4 class="groupHeader h200">Defined exports</h4>
+        </div>
+        <div class="documentableElement" id="Event-0" data-f-export="from events}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">val </span></span><a href="bearlyb.html#Event-0" t="n" class="documentableName ">Event</a>: <a href="bearlyb/events/Event$.html" t="t">Event</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <a href="bearlyb/events.html">events</a>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Event-0" data-f-export="from events}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">type </span></span><a href="bearlyb.html#Event-0" t="n" class="documentableName ">Event</a><span t="k"> = </span><a href="bearlyb/events/Event.html" t="t">Event</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <a href="bearlyb/events.html">events</a>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Init-0" data-f-export="from initialize}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">val </span></span><a href="bearlyb.html#Init-0" t="n" class="documentableName ">Init</a>: <a href="bearlyb/initialize/Flags$.html" t="t">Flags</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <a href="bearlyb/initialize.html">initialize</a>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Init-0" data-f-export="from initialize}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">type </span></span><a href="bearlyb.html#Init-0" t="n" class="documentableName ">Init</a><span t="k"> = </span><a href="bearlyb/initialize/Flags.html" t="t">Flags</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <a href="bearlyb/initialize.html">initialize</a>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Keycode-0" data-f-export="from Keycode$package}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">val </span></span><a href="bearlyb.html#Keycode-0" t="n" class="documentableName ">Keycode</a>: <a href="bearlyb/keycode/Keycode$.html" t="t">Keycode</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <span data-unresolved-link="">Keycode$package</span>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Keycode-0" data-f-export="from Keycode$package$}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">type </span></span><a href="bearlyb.html#Keycode-0" t="n" class="documentableName ">Keycode</a><span t="k"> = </span><a href="bearlyb/keycode.html#Keycode-0" t="t">Keycode</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <span data-unresolved-link="">Keycode$package$</span>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Keymod-0" data-f-export="from Keymod$package}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">val </span></span><a href="bearlyb.html#Keymod-0" t="n" class="documentableName ">Keymod</a>: <a href="bearlyb/keycode/Keymod$.html" t="t">Keymod</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <span data-unresolved-link="">Keymod$package</span>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Keymod-0" data-f-export="from Keymod$package$}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">type </span></span><a href="bearlyb.html#Keymod-0" t="n" class="documentableName ">Keymod</a><span t="k"> = </span><a href="bearlyb/keycode.html#Keymod-0" t="t">Keymod</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <span data-unresolved-link="">Keymod$package$</span>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Point-0" data-f-export="from Point$package}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">val </span></span><a href="bearlyb.html#Point-0" t="n" class="documentableName ">Point</a>: <a href="bearlyb/rect/Point$.html" t="t">Point</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <span data-unresolved-link="">Point$package</span>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Point-0" data-f-export="from Point$package$}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">type </span></span><a href="bearlyb.html#Point-0" t="n" class="documentableName ">Point</a><span t="k"> = </span><a href="bearlyb/rect.html#Point-0" t="t">Point</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <span data-unresolved-link="">Point$package$</span>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Rect-0" data-f-export="from rect}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">val </span></span><a href="bearlyb.html#Rect-0" t="n" class="documentableName ">Rect</a>: <a href="bearlyb/rect/Rect$.html" t="t">Rect</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <a href="bearlyb/rect.html">rect</a>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Rect-0" data-f-export="from rect}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">type </span></span><a href="bearlyb.html#Rect-0" t="n" class="documentableName ">Rect</a><span t="k"> = </span><a href="bearlyb/rect/Rect.html" t="t">Rect</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <a href="bearlyb/rect.html">rect</a>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Renderer-0" data-f-export="from render}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">val </span></span><a href="bearlyb.html#Renderer-0" t="n" class="documentableName ">Renderer</a>: <a href="bearlyb/render/Renderer$.html" t="t">Renderer</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <a href="bearlyb/render.html">render</a>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Renderer-0" data-f-export="from render}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">type </span></span><a href="bearlyb.html#Renderer-0" t="n" class="documentableName ">Renderer</a><span t="k"> = </span><a href="bearlyb/render/Renderer.html" t="t">Renderer</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <a href="bearlyb/render.html">render</a>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="SystemTheme-0" data-f-export="from video}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">val </span></span><a href="bearlyb.html#SystemTheme-0" t="n" class="documentableName ">SystemTheme</a>: <a href="bearlyb/video/SystemTheme$.html" t="t">SystemTheme</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <a href="bearlyb/video.html">video</a>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="SystemTheme-0" data-f-export="from video}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">type </span></span><a href="bearlyb.html#SystemTheme-0" t="n" class="documentableName ">SystemTheme</a><span t="k"> = </span><a href="bearlyb/video/SystemTheme.html" t="t">SystemTheme</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <a href="bearlyb/video.html">video</a>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Texture-0" data-f-export="from render}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">val </span></span><a href="bearlyb.html#Texture-0" t="n" class="documentableName ">Texture</a>: <a href="bearlyb/render/Texture$.html" t="t">Texture</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <a href="bearlyb/render.html">render</a>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Texture-0" data-f-export="from render}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">type </span></span><a href="bearlyb.html#Texture-0" t="n" class="documentableName ">Texture</a><span t="k"> = </span><a href="bearlyb/render/Texture.html" t="t">Texture</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <a href="bearlyb/render.html">render</a>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Window-0" data-f-export="from video}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">val </span></span><a href="bearlyb.html#Window-0" t="n" class="documentableName ">Window</a>: <a href="bearlyb/video/Window$.html" t="t">Window</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <a href="bearlyb/video.html">video</a>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="Window-0" data-f-export="from video}" data-f-keywords="final">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">final </span></span><span class="kind"><span t="k">type </span></span><a href="bearlyb.html#Window-0" t="n" class="documentableName ">Window</a><span t="k"> = </span><a href="bearlyb/video/Window.html" t="t">Window</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <a href="bearlyb/video.html">video</a>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="systemTheme-0" data-f-export="from video$package}">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="bearlyb.html#systemTheme-0" t="n" class="documentableName ">systemTheme</a>: <a href="bearlyb/video/SystemTheme.html" t="t">SystemTheme</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo">
+            Exported from <span data-unresolved-link="">video$package</span>
+           </div>
+           <div class="memberDocumentation"></div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+    </section>
+   </div>
+  </div>
+ </div>
+</section></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#members-list">Members list</a><ul><li><a href="#Packages">Packages</a></li><li><a href="#Type-members">Type members</a><ul><li><a href="#Classlikes">Classlikes</a></li><li><a href="#Types">Types</a></li></ul></li><li><a href="#Exports">Exports</a><ul><li><a href="#Defined-exports">Defined exports</a></li></ul></li></ul></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>
